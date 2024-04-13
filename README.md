@@ -1,2 +1,3 @@
-# world-maker
-开发世界的工具库
+# world-maker-solidjs
+
+面向 solidjs 开发者的开发世界的模板
