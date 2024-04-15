@@ -4,12 +4,12 @@ import App from "./App";
 
 const root = document.getElementById("root");
 
-if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
-    throw new Error(
-        "Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?"
-    );
+//开发环境下执行render
+if (import.meta.env.DEV && root instanceof HTMLElement) {
+    render(() => <App />, root!);
 }
 
+//默认导出
 export default (el: HTMLElement) => {
-    render(() => <App></App>, el);
+    render(() => <App />, el);
 };
