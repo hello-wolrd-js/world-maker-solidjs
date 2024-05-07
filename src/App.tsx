@@ -31,7 +31,12 @@ const App: Component<{ children?: JSXElement }> = (props) => {
                     <button class="btn" onClick={() => navigator("/tyee")}>
                         ToTyee
                     </button>
-                    <button class="btn btn-warning" onClick={()=>navigator('/')}>Reset</button>
+                    <button
+                        class="btn btn-warning"
+                        onClick={() => navigator("/")}
+                    >
+                        Reset
+                    </button>
                 </div>
             </div>
             <div class="mt-5">{props.children}</div>
